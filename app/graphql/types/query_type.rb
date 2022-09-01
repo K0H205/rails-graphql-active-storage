@@ -7,13 +7,6 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    field :work, Types::WorkType, null: false do
-      description 'Find a work by ID'
-      argument :id, ID, required: true
-    end
-
-    def work(id:)
-      Work.find(id)
-    end
+    field :work, resolver: Resolvers::WorkResolver
   end
 end
