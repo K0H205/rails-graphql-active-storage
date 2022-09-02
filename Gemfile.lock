@@ -66,6 +66,9 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    apollo_upload_server (2.1.4)
+      actionpack (>= 6.1.6)
+      graphql (>= 1.8)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -188,6 +191,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  apollo_upload_server
   bootsnap
   debug
   graphiql-rails
